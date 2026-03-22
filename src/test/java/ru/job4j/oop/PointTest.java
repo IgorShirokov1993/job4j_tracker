@@ -31,4 +31,31 @@ public class PointTest {
         double expected = 5;
         assertThat(distance).isEqualTo(expected);
     }
+
+    @Test
+    void when1Minus3and4to4and1and4then5() {
+        Point c = new Point(1, -3, 4);
+        Point d = new Point(4, 1, 4);
+        double distance3d = c.distance3d(d);
+        double expected = 5;
+        assertThat(distance3d).isEqualTo(expected);
+    }
+
+    @Test
+    void when2Minus2and7to6and2and5then6() {
+        Point c = new Point(2, -2, 7);
+        Point d = new Point(6, 2, 5);
+        double distance3d = c.distance3d(d);
+        double expected = 6;
+        assertThat(distance3d).isEqualTo(expected);
+    }
+
+    @Test
+    void when2and3and4toMinus6andMinus1and5then9() {
+        Point c = new Point(2, 3, 4);
+        Point d = new Point(-6, -1, 5);
+        double distance3d = c.distance3d(d);
+        double expected = 9;
+        assertThat(distance3d).isEqualTo(expected);
+    }
 }
