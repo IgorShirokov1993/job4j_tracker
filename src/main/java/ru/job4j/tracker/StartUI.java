@@ -10,5 +10,6 @@ public class StartUI {
         LocalDateTime created = item.getCreated();
         String result = created.format(formatter);
         System.out.println(result);
+        System.out.println(item);
     }
 }
