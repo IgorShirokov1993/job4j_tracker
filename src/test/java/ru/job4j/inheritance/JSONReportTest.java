@@ -23,10 +23,10 @@ public class JSONReportTest {
     public void whenNameIsDavidBodyIsNameSong() {
         String ln = System.lineSeparator();
         String expected = "{" + ln
-                + "\t\"name\" : \"David Gilmour\"," + ln
+                + "\t\"name\" : \"David Gilmore\"," + ln
                 + "\t\"body\" : \"Shine On You Crazy Diamond\"" + ln
                 + "}";
-        String name = "David Gilmour";
+        String name = "David Gilmore";
         String body = "Shine On You Crazy Diamond";
         String result = new JSONReport().generate(name, body);
         assertThat(result).isEqualTo(expected);
