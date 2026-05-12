@@ -93,10 +93,8 @@ public class StartUITest {
                         + "0. Показать все заявки" + ln
                         + "1. Завершить программу" + ln
                         + "=== Вывод всех заявок ===" + ln
-                        + "Item{id=" + one.getId() + ", name='" + one.getName() + "', created="
-                        + one.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss")) + "}" + ln
-                        + "Item{id=" + two.getId() + ", name='" + two.getName() + "', created="
-                        + two.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss")) + "}" + ln
+                        + one + ln
+                        + two + ln
                         + "Меню:" + ln
                         + "0. Показать все заявки" + ln
                         + "1. Завершить программу" + ln
